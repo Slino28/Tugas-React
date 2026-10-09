@@ -10,6 +10,10 @@ import Book from './components/pages/Book';
 import Team from './components/pages/Team';
 import Contact from './components/pages/Contact';
 
+import Login from './components/pages/auth/login'; 
+import Register from './components/pages/auth/register';
+
+
 
 // Data Buku
 const books = [
@@ -34,6 +38,8 @@ function App() {
           <Route path="/book" element={<Book books={books} />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
 
         {/* Footer dipasang di luar Routes agar selalu tampil di bawah */}
